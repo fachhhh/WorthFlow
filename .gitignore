@@ -1,3 +1,4 @@
 # AI Development Files
 .private/
 phase/
+.gitignore
