@@ -450,8 +450,6 @@ Budget Prediction
 
 Investment Module
 
-Open Banking
-
 Fraud Detection
 ```
 

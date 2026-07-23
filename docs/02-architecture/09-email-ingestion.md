@@ -81,7 +81,6 @@ Gmail
 ```text
 Outlook
 Yahoo
-Open Banking API
 ```
 
 # Domain Model

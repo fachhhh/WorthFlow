@@ -821,8 +821,6 @@ GraphQL
 
 Webhook
 
-Open Banking API
-
 AI Recommendation API
 
 Budget API

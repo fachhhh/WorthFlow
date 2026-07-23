@@ -22,10 +22,9 @@ WorthFlow adalah platform manajemen keuangan keluarga berbasis mobile dan web ya
 Versi awal produk tidak mencakup:
 * Transfer uang antar pengguna.
 * Pembayaran tagihan.
-* Integrasi Open Banking resmi.
 * Fitur investasi otomatis.
 * Chatbot keuangan.
-* Multi-family workspace dalam satu akun.
+* Workspace lintas keluarga tidak termasuk pada MVP.
 
 # 5. Target Users
 ## Primary Users
@@ -187,7 +186,7 @@ Fitur yang wajib ada untuk versi pertama yang dapat digunakan keluarga:
 | Waktu input transaksi manual                | < 15 detik |
 
 # 13. Open Questions
-1. Provider email dan bank mana yang akan didukung pertama kali?
+1. Provider email mana yang akan didukung pertama kali?
 2. Apakah spreadsheet sinkronisasi bersifat otomatis real-time atau manual export?
 3. Apakah OCR diproses sepenuhnya di device atau melalui worker backend?
 4. Bagaimana strategi conflict resolution jika transaksi diubah di dua device berbeda?

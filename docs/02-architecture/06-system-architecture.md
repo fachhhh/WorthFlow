@@ -301,7 +301,6 @@ Gmail
 
 * Outlook
 * Yahoo
-* Open Banking APIs
 
 # Analytics Layer
 

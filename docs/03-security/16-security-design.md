@@ -616,8 +616,7 @@ Version 2
 Version 3
 
 - Hardware Security Key
-- Open Banking Security
-- Fraud Detection
+- Advanced Fraud Detection
 
 ---
 

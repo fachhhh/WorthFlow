@@ -35,7 +35,7 @@ Design Goals
 - Third Normal Form (3NF)
 - UUID Primary Key
 - Offline-first compatible
-- Multi-family support
+- Family-scoped support
 - Audit friendly
 - Easily extensible
 

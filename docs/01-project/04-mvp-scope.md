@@ -48,8 +48,7 @@ MVP dianggap berhasil apabila:
   * Member
 
 ### Excluded
-* Multi-family management
-* Organization workspace
+* Workspace lintas keluarga tidak didukung pada MVP
 
 ## 3. Manual Transaction
 ### Included
@@ -96,19 +95,17 @@ MVP dianggap berhasil apabila:
 * Approval workflow
 * Duplicate detection sederhana
 
-### Initial Supported Banks
+### Initial Supported Providers
 MVP hanya mendukung:
 
 ```text id="g0a5h0"
-1 bank terlebih dahulu
+1 provider email terlebih dahulu
 ```
 
-Bank tambahan ditambahkan setelah MVP stabil.
+Provider tambahan ditambahkan setelah MVP stabil.
 
 ### Excluded
-* Outlook integration
-* Yahoo Mail integration
-* Open Banking API
+* Integrasi provider email tambahan tidak termasuk pada MVP.
 
 ## 7. Dashboard
 ### Included

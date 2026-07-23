@@ -137,7 +137,6 @@ WorthFlow diperkirakan akan berkembang dengan fitur seperti:
 - Investment Tracking
 - AI Insights
 - Push Notification
-- Multi Family
 
 Riverpod tetap dapat menangani pertumbuhan tersebut tanpa perubahan arsitektur besar.
 

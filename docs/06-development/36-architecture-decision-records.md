@@ -261,7 +261,6 @@ Konsekuensi.
 
 Beberapa keputusan yang kemungkinan memerlukan ADR di masa depan.
 
-- Multi Family Support
 - Shared Budget
 - Recurring Transaction Engine
 - Push Notification Service

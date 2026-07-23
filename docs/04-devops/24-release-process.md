@@ -150,8 +150,7 @@ Perubahan besar.
 Contoh.
 
 - Offline Engine baru
-- Open Banking
-- Multi Family
+- Family Workspace Enhancements
 
 ---
 
