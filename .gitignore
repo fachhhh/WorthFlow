@@ -1,4 +1,15 @@
-# AI Development Files
+# AI development files
 .private/
 phase/
-.gitignore
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Node tooling
+node_modules/
+
+# Operating system files
+.DS_Store
+Thumbs.db
