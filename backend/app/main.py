@@ -11,6 +11,6 @@ app = FastAPI(
 app.state.settings = settings
 
 
-@app.get("/health", tags=["Health"])
+@app.get("/admin/health", tags=["Health"])
 async def health_check() -> dict[str, str]:
     return {"status": "healthy"}
