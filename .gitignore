@@ -1,4 +1,54 @@
 # AI Development Files
 .private/
 phase/
-.gitignore
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Flutter and Dart
+.dart_tool/
+.packages
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Build outputs
+build/
+dist/
+
+# Android local and generated files
+.gradle/
+local.properties
+*.jks
+*.keystore
+
+# IDE and editor local files
+.idea/
+*.iml
+.vscode/
+
+# Node.js
+node_modules/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
