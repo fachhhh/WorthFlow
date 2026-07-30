@@ -1,6 +1,6 @@
 # API Specification
 
-Version: 1.0
+Version: 1.1
 
 ---
 
@@ -36,9 +36,13 @@ WorthFlow menggunakan pendekatan:
 - JWT Authentication
 - Versioned Endpoint
 
-Base URL
+Base Path
 
+```text
 /api/v1
+```
+
+Seluruh endpoint pada dokumen ini ditulis relatif terhadap Base Path, kecuali jika full path ditampilkan secara eksplisit.
 
 ---
 
@@ -82,13 +86,33 @@ Authentication dikelola menggunakan Supabase Auth.
 
 # 5. API Versioning
 
-Semua endpoint diawali
+Semua endpoint diawali:
 
+```text
 /api/v1
+```
 
-Contoh
+Contoh full endpoint:
 
-/api/v1/transactions
+```http
+GET /api/v1/transactions
+```
+
+---
+
+# 5A. Implementation Status
+
+Dokumen ini mendefinisikan target API contract WorthFlow secara keseluruhan.
+
+Ketersediaan endpoint tetap mengikuti current development phase.
+
+Pada Phase 02 — Backend Foundation, satu-satunya application endpoint yang boleh tersedia adalah:
+
+```http
+GET /api/v1/admin/health
+```
+
+Endpoint lain pada dokumen ini merupakan future contract dan belum boleh diimplementasikan sebelum phase terkait aktif.
 
 ---
 
@@ -575,7 +599,21 @@ GET
 
 /admin/health
 
+Full endpoint:
+
+```http
+GET /api/v1/admin/health
+```
+
 Health Check.
+
+Implementation status pada Phase 02: active.
+
+Endpoint legacy berikut tidak digunakan setelah migrasi Phase 02:
+
+```http
+GET /admin/health
+```
 
 ---
 
@@ -689,7 +727,7 @@ search
 
 Contoh
 
-GET /transactions?page=1&limit=20
+GET /api/v1/transactions?page=1&limit=20
 
 ---
 

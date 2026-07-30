@@ -1,6 +1,6 @@
 # Coding Standards
 
-Version: 1.0
+Version: 1.1
 
 ---
 
@@ -38,31 +38,27 @@ Kode yang mudah dipahami lebih bernilai daripada kode yang terlalu kompleks.
 
 # 3. Project Structure
 
-Repository menggunakan struktur berikut.
+Repository aktif menggunakan struktur berikut.
 
-```
-worthflow/
-
-apps/
-    mobile/
-    web/
-
-services/
-    backend/
-    email-parser/
-    ocr-worker/
-    analytics/
-
-database/
-
-docs/
-
-assets/
-
-infrastructure/
+```text
+WorthFlow/
+├── backend/
+├── docs/
+├── worthflow/
+├── docker-compose.yml
+└── README.md
 ```
 
-Setiap folder memiliki satu tanggung jawab utama.
+Tanggung jawab utama:
+
+- `backend/`: FastAPI backend dan backend tests.
+- `worthflow/`: Flutter mobile dan web application.
+- `docs/`: project documentation dan Architecture Decision Records.
+- `docker-compose.yml`: local development orchestration.
+
+Backend tetap berada pada `backend/` dan tidak dipindahkan ke `services/backend/` pada Phase 02.
+
+Struktur internal backend harus modular, tetapi tidak boleh menambah deployable service baru sebelum phase yang relevan.
 
 ---
 

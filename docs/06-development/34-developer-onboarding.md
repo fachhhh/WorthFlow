@@ -1,6 +1,6 @@
 # Developer Onboarding
 
-Version: 1.0
+Version: 1.1
 
 ---
 
@@ -100,59 +100,53 @@ cd worthflow
 
 # 6. Repository Structure
 
+```text
+WorthFlow/
+├── backend/
+├── docs/
+├── worthflow/
+├── docker-compose.yml
+└── README.md
 ```
-worthflow/
 
-apps/
-    mobile/
-    web/
+Keterangan:
 
-services/
-    backend/
-    email-parser/
-    ocr-worker/
-    analytics/
+- `backend/` berisi FastAPI backend.
+- `worthflow/` berisi Flutter application.
+- `docs/` berisi project documentation dan ADR.
+- `docker-compose.yml` digunakan untuk local development.
 
-database/
-
-docs/
-
-assets/
-
-infrastructure/
-```
+Backend tidak berada di `services/backend/` pada struktur repository aktif.
 
 ---
 
 # 7. Environment Variables
 
-Salin file.
+Masuk ke folder backend.
 
-```
-.env.example
-```
-
-menjadi.
-
-```
-.env
+```bash
+cd backend
 ```
 
-Isi seluruh variabel.
+Salin file contoh konfigurasi.
 
-```
-SUPABASE_URL=
+Windows PowerShell:
 
-SUPABASE_ANON_KEY=
-
-SUPABASE_SERVICE_KEY=
-
-JWT_SECRET=
-
-GEMINI_API_KEY=
+```powershell
+Copy-Item .env.example .env
 ```
 
-Jangan pernah melakukan commit file `.env`.
+Linux / macOS:
+
+```bash
+cp .env.example .env
+```
+
+Isi hanya environment variables yang telah didefinisikan pada `backend/.env.example`.
+
+Jangan menambahkan credential yang belum dibutuhkan current phase.
+
+Jangan pernah melakukan commit file `backend/.env`.
 
 ---
 
@@ -161,7 +155,7 @@ Jangan pernah melakukan commit file `.env`.
 Masuk ke folder backend.
 
 ```bash
-cd services/backend
+cd backend
 ```
 
 Buat virtual environment.
@@ -206,10 +200,10 @@ http://localhost:8000
 
 # 9. Mobile Setup
 
-Masuk ke folder.
+Masuk ke folder Flutter application.
 
 ```bash
-cd apps/mobile
+cd worthflow
 ```
 
 Install dependency.
